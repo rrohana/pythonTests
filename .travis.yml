@@ -2,9 +2,9 @@ nguage: python
 python:
   - "2.6"
   - "2.7"
-  - "3.2"
-  - "3.3"
-script: python tests/test_all_of_the_units.py
+script: python nslookup.py
+install:
+  - pip install -q -e . --use-mirrors
 branches:
   only:
     - master
